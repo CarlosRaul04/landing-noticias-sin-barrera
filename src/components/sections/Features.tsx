@@ -22,7 +22,7 @@ export function Features() {
   };
 
   return (
-    <section id="herramientas" aria-labelledby="herr-t" className="bg-white py-20 md:py-28">
+    <section id="herramientas" aria-labelledby="herr-t" className="overflow-x-clip bg-white py-20 md:py-28">
       <Container>
         <SectionHeading id="herr-t" eyebrow="Herramientas" title="Cuatro herramientas, un solo botón" text="Aparecen en una barra discreta sobre la noticia. Usa una, varias o ninguna." center />
 
@@ -45,7 +45,7 @@ export function Features() {
           ))}
         </div>
 
-        <div role="tabpanel" id={`panel-${f.id}`} aria-labelledby={`tab-${f.id}`} className="mt-14 grid items-center gap-12 md:grid-cols-2 md:gap-20">
+        <div role="tabpanel" id={`panel-${f.id}`} aria-labelledby={`tab-${f.id}`} className="mt-20 grid items-center gap-12 md:mt-28 md:grid-cols-2 md:gap-20">
           <div key={f.id} className="order-2 animate-rise md:order-1">
             <h3 className="text-3xl font-semibold tracking-tight sm:text-4xl">{f.title}</h3>
             <p className="mt-4 text-lg leading-relaxed text-ink-soft">{f.text}</p>
@@ -59,7 +59,7 @@ export function Features() {
             </ul>
           </div>
           <div className="relative order-1 mx-auto w-full max-w-[17rem] md:order-2">
-            <div aria-hidden="true" className="absolute inset-[-12%] rounded-full bg-mist" />
+            <div aria-hidden="true" className="absolute inset-x-[-10%] inset-y-[-6%] rounded-full bg-mist" />
             <PhoneFrame key={f.image} src={f.image} alt={f.alt} className="relative animate-rise" />
           </div>
         </div>

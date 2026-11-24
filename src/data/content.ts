@@ -90,7 +90,7 @@ export const CTA = {
 };
 
 export const FOOTER = {
-  team: ['Carlos Ramirez Cuentas', 'Paulo Herrera Macahuachi'],
+  team: ['Carlos Ramirez Cuentas', 'Paulo Herrera Macahuachi', 'Lenin Barboza Quispe'],
   course: 'Interacción Humano Computador · USIL',
   note: 'Prototipo académico. No está afiliado a ningún diario.',
 };
